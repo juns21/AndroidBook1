@@ -10,53 +10,55 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 
 public class MainActivity extends ActionBarActivity {
+    ArrayList<String> Items;
+    ArrayAdapter<String> Adapter;
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 데이터 원본 준비
-        /*ArrayList<String> arGeneral = new ArrayList<String>();
-        arGeneral.add("김유신");
-        arGeneral.add("이순신");
-        arGeneral.add("강감찬");
-        arGeneral.add("을지문덕");
+        Items = new ArrayList<String>();
+        Items.add("First");
+        Items.add("Second");
+        Items.add("Third");
 
-        // 어댑터 준비
-        ArrayAdapter<String> adapter;
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, arGeneral);
-
-        // 어댑터 연결
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(adapter);*/
-
-        ArrayAdapter<CharSequence> adapter;
-        adapter = ArrayAdapter.createFromResource(this, R.array.country, android.R.layout.simple_expandable_list_item_1);
-
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setAdapter(adapter);
-        list.setOnItemClickListener(mItemClickListener);
-
+        Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, Items);
+        list = (ListView) findViewById(R.id.list);
+        list.setAdapter(Adapter);
         list.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-        list.setDivider(new ColorDrawable(Color.YELLOW));
-        list.setDividerHeight(5);
     }
 
-    AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            String mes;
-
-
+    public void mOnClick(View v) {
+        EditText ed = (EditText) findViewById(R.id.newitem);
+        switch (v.getId()) {
+            case R.id.add:
+                String text = ed.getText().toString();
+                if (text.length() != 0) {
+                    Items.add(text);
+                    ed.setText("");
+                    Adapter.notifyDataSetChanged();
+                }
+                break;
+            case R.id.delete:
+                int pos;
+                pos = list.getCheckedItemPosition();
+                if (pos != ListView.INVALID_POSITION) {
+                    Items.remove(pos);
+                    list.clearChoices();
+                    Adapter.notifyDataSetChanged();
+                }
+                break;
         }
-    };
+    }
 
 
     @Override
