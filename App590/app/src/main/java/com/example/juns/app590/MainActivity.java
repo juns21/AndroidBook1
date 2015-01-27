@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.SparseBooleanArray;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,11 +31,13 @@ public class MainActivity extends ActionBarActivity {
         Items.add("First");
         Items.add("Second");
         Items.add("Third");
+        Items.add("Fourth");
+        Items.add("Fifth");
 
-        Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, Items);
+        Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, Items);
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(Adapter);
-        list.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        list.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
     }
 
     public void mOnClick(View v) {
@@ -49,10 +52,13 @@ public class MainActivity extends ActionBarActivity {
                 }
                 break;
             case R.id.delete:
-                int pos;
-                pos = list.getCheckedItemPosition();
-                if (pos != ListView.INVALID_POSITION) {
-                    Items.remove(pos);
+                SparseBooleanArray sb = list.getCheckedItemPositions();
+                if (sb.size() != 0) {
+                    for (int i=0; i<sb.size(); i++) {
+                        if (sb.get(i)) {
+                            Items.remove(i);
+                        }
+                    }
                     list.clearChoices();
                     Adapter.notifyDataSetChanged();
                 }
