@@ -4,14 +4,44 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ProgressBar;
 
 
 public class MainActivity extends ActionBarActivity {
+    ProgressBar mProgBar;
+    ProgressBar mProgCircle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mProgBar = (ProgressBar) findViewById(R.id.progress);
+        mProgCircle = (ProgressBar) findViewById(R.id.progcircle);
+    }
+
+    public void mOnClick(View v) {
+        switch (v.getId()) {
+            case R.id.decfirst:
+                mProgBar.incrementProgressBy(-2);
+                break;
+            case R.id.incfirst:
+                mProgBar.incrementProgressBy(2);
+                break;
+            case R.id.decsecond:
+                mProgBar.incrementSecondaryProgressBy(-2);
+                break;
+            case R.id.incsecond:
+                mProgBar.incrementSecondaryProgressBy(2);
+                break;
+            case R.id.start:
+                mProgCircle.setVisibility(View.VISIBLE);
+                break;
+            case R.id.stop:
+                mProgCircle.setVisibility(View.INVISIBLE);
+                break;
+        }
     }
 
 
