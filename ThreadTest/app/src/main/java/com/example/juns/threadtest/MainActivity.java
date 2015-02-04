@@ -1,11 +1,14 @@
 package com.example.juns.threadtest;
 
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
     public void mOnClick(View v) {
         mMainValue++;
         mMainText.setText("MainValue : "+ mMainValue);
-        mBackText.setText("BackValue : "+ mBackValue);
+        //mBackText.setText("BackValue : "+ mBackValue);
     }
 
     class BackThread extends Thread {
@@ -38,7 +41,13 @@ public class MainActivity extends ActionBarActivity {
             //super.run();
             while (true) {
                 mBackValue++;
+                /**
+                 * 스레드는 백그라운드에서만 작동하기 때문에
+                 * 내부 컨트롤을 하면 에러가 발생한다.
+                 * 내부 컨트롤을 하고 싶다면 핸들러를 사용한다.
+                 */
                 //mBackText.setText("BackVallue : "+ mBackValue);;
+                mHandler.sendEmptyMessage(0);
                 try {
                     Thread.sleep(1000);
                 }catch (InterruptedException e) {
@@ -47,4 +56,12 @@ public class MainActivity extends ActionBarActivity {
             }
         }
     }
+
+    Handler mHandler = new Handler() {
+        public  void handleMessage(Message msg) {
+            if (msg.what == 0) {
+                mBackText.setText("BackValue : "+ mBackValue);
+            }
+        }
+    };
 }
