@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gesture_color">#FFFFFF00</color>
+    <color name="background">#59ccf5</color>
+    <color name="text_time">#a0a1a3</color>
+</resources>

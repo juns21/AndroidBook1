@@ -116,7 +116,6 @@ public class MainActivity extends Activity {
                     m_ArrLotto[i][j] = temp;
                     m_ProbAbility[temp] +=1;
                 }
-
             }
         }
     }
