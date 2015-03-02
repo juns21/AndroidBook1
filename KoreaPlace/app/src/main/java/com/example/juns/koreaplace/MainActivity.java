@@ -64,17 +64,17 @@ public class MainActivity extends Activity {
         image.setImageResource(getResources().getIdentifier(arImage[0], "mipmap", getPackageName()));
 
         // Init horizontal listview
-        listView = (HorizontalListView)findViewById(R.id.listview);
-        listView.setAdapter(mAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-                                    long arg3) {
-                // CLick on listview item to view image
-                image.setImageResource(getResources().getIdentifier(arImage[arg2], "mipmap", getPackageName()));
-            }
-        });
-    }
+            listView = (HorizontalListView)findViewById(R.id.listview);
+    listView.setAdapter(mAdapter);
+    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+        long arg3) {
+            // CLick on listview item to view image
+            image.setImageResource(getResources().getIdentifier(arImage[arg2], "mipmap", getPackageName()));
+        }
+    });
+}
 
     private BaseAdapter mAdapter = new BaseAdapter() {
         @Override
