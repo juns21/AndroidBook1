@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_start"
+    tools:context=".StartActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/logo"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="3"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="3"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_category"
+                    android:text="경복궁"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="1"
+                    android:onClick="Select"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/bg_category"
+                    android:text="창덕궁"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="2"
+                    android:onClick="Select"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/bg_category"
+                    android:text="창경궁"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="3"
+                    android:onClick="Select"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="3" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_category"
+                    android:text="덕수궁"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="4"
+                    android:onClick="Select" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_category"
+                    android:text="경희궁 "
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="5"
+                    android:onClick="Select" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_category"
+                    android:text="운현궁 "
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/Category_Textsize"
+                    android:tag="6"
+                    android:onClick="Select" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
