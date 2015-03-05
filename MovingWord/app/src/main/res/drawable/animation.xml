@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+    <item android:drawable="@mipmap/explosion_1" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_2" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_3" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_4" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_5" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_6" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_7" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_8" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_9" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_10" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_11" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_12" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_13" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_14" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_15" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_16" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_17" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_18" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_19" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_20" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_21" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_22" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_23" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_24" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_25" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_26" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_27" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_28" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_29" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_30" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_31" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_32" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_33" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_34" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_35" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_36" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_37" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_38" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_39" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_40" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_41" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_42" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_43" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_44" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_45" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_46" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_47" android:duration="20" />
+    <item android:drawable="@mipmap/explosion_48" android:duration="20" />
+</animation-list>

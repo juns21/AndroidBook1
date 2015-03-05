@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="ButtonStartMarginBottom">100dp</dimen>
+
+    <dimen name="HeaderPadding">10dp</dimen>
+
+    <dimen name="HeaderRightSize">20dp</dimen>
+
+    <dimen name="SelectYourWord">14sp</dimen>
+
+    <dimen name="TIME_SCORE">14sp</dimen>
+
+    <dimen name="GAMEOVER">40sp</dimen>
+
+    <dimen name="Character">18sp</dimen>
+</resources>
