@@ -1,0 +1,924 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_main"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:weightSum="10"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.8"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="8"
+                >
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_01"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_02"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_03"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_04"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_05"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_06"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.6"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="7"
+                >
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_07"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_08"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_09"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_10"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_11"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_12"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:weightSum="7" >
+
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_13"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/food_14"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/img15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/food_15"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/img16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/food_16"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4" />
+
+                <ImageView
+                    android:id="@+id/img17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_17"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="8" >
+
+                <ImageView
+                    android:id="@+id/img18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_18"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_19"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_20"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_21"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:id="@+id/img22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_22"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_23"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:id="@+id/img24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_24"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_25"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="7" >
+
+                <ImageView
+                    android:id="@+id/img26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_26"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img27"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_27"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_28"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img29"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_29"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img30"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_30"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <ImageView
+                    android:id="@+id/img31"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_31"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:id="@+id/img32"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/food_32"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/btnHelp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_help"
+            android:onClick="help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="12" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:tag="img1"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:tag="img2"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:tag="img3"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:tag="img4"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="5"
+            android:textColor="@android:color/white"
+            android:tag="img5"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="6"
+            android:textColor="@android:color/white"
+            android:tag="img6"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="7"
+            android:textColor="@android:color/white"
+            android:tag="img7"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:tag="img8"
+            android:onClick="myOnClick"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="9"
+            android:textColor="@android:color/white"
+            android:tag="img9"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="10"
+            android:textColor="@android:color/white"
+            android:tag="img10"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="11"
+            android:textColor="@android:color/white"
+            android:tag="img11"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="12"
+            android:textColor="@android:color/white"
+            android:tag="img12"
+            android:onClick="myOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="12" >
+
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="13"
+            android:textColor="@android:color/white"
+            android:tag="img13"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="14"
+            android:textColor="@android:color/white"
+            android:tag="img14"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="15"
+            android:textColor="@android:color/white"
+            android:tag="img15"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="16"
+            android:textColor="@android:color/white"
+            android:tag="img16"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="17"
+            android:textColor="@android:color/white"
+            android:tag="img17"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="18"
+            android:textColor="@android:color/white"
+            android:tag="img18"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn19"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="19"
+            android:textColor="@android:color/white"
+            android:tag="img19"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="20"
+            android:textColor="@android:color/white"
+            android:tag="img20"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="21"
+            android:textColor="@android:color/white"
+            android:tag="img21"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="22"
+            android:textColor="@android:color/white"
+            android:tag="img22"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="23"
+            android:textColor="@android:color/white"
+            android:tag="img23"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="24"
+            android:textColor="@android:color/white"
+            android:tag="img24"
+            android:onClick="myOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="12" >
+
+        <Button
+            android:id="@+id/btn25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="25"
+            android:textColor="@android:color/white"
+            android:tag="img25"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn26"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="26"
+            android:textColor="@android:color/white"
+            android:tag="img26"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn27"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="27"
+            android:textColor="@android:color/white"
+            android:tag="img27"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="28"
+            android:textColor="@android:color/white"
+            android:tag="img28"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn29"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="29"
+            android:textColor="@android:color/white"
+            android:tag="img29"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="30"
+            android:textColor="@android:color/white"
+            android:tag="img30"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="31"
+            android:textColor="@android:color/white"
+            android:tag="img31"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:id="@+id/btn32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_btn"
+            android:text="32"
+            android:textColor="@android:color/white"
+            android:tag="img32"
+            android:onClick="myOnClick" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="4"
+            android:background="@mipmap/btn_clear"
+            android:text="상치우기"
+            android:textColor="@android:color/white"
+            android:onClick="clear" />
+    </LinearLayout>
+
+</LinearLayout>
